@@ -1,0 +1,1 @@
+# Welcome to my page for Python! I will be creating scripts to add here, feel free to check them out.
