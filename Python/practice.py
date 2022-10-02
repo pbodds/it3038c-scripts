@@ -56,4 +56,3 @@ print('I wish I was %s years old' % (myAge * 2))
 
 time.sleep(3)
 print("I'm tired. I go sleep sleep now.")
-
