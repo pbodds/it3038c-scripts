@@ -4,7 +4,6 @@ const os = require("os");
 const ip = require("ip");
 
 
-
 var server = http.createServer((req, res) => {
   if (req.url === "/") {
       fs.readFile("./public/index.html", "UTF-8", (err, body) => {
@@ -24,7 +23,6 @@ var day = Math.floor(time/86400)
 var hr = Math.floor((time-(day*86400))/3600)
 var min = Math.floor((time-((day*86400)+(hr*3600)))/60)
 var sec = time-((day*86400)+(hr*3600)+(min*60))
-console.log (sec)
 
 //memory
 var totalMem = os.totalmem() / 1000000
