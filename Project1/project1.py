@@ -11,7 +11,7 @@ while loop == True:
         selectedTime = int(input())
 
         if selectedTime == 1:
-            print(time.strftime("The time currently is: %I:%M:%S"))
+            print(time.strftime("The time currently is: %I:%M:%S %p"))
             loop = False
             time.sleep(3) 
 
