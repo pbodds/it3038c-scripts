@@ -25,10 +25,12 @@ while loop == True:
     except:
         print("Please enter a number")
 
+
+# getting variables in the order of the tuple (total, used, free). "/" defines the path for the drive (drive used depends on directory of file)
 total, used, free = shutil.disk_usage("/")
 
+# dividing variables by 1024**3 as given variables are returned in bytes and want to covert to GB, with 1024 bytes in a KB * 1024 for Megabyte * 1024 for Gigabyte
 print("Time to check our hard drive space!")
-
-print("Total: %d GB" % (total // (2**30)))
-print("Used: %d GB" % (used // (2**30)))
-print("Free: %d GB" % (free // (2**30)))
+print("Total: %d GB" % (total // (1024**3)))
+print("Used: %d GB" % (used // (1024**3)))
+print("Free: %d GB" % (free // (1024**3)))
