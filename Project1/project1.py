@@ -24,7 +24,7 @@ while loop == True:
             print("Please enter (1) for 12 hour time format or (2) for 24 hour time format")
     except:
         print("Please enter a number")
-        
+
 total, used, free = shutil.disk_usage("/")
 
 print("Time to check our hard drive space!")
@@ -32,6 +32,3 @@ print("Time to check our hard drive space!")
 print("Total: %d GB" % (total // (2**30)))
 print("Used: %d GB" % (used // (2**30)))
 print("Free: %d GB" % (free // (2**30)))
-
-
-
