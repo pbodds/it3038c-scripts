@@ -13,17 +13,17 @@ print("Your email: " + fake.email())
 print("Your country: " + fake.country())
 print("\n")
 
-#Printing 10 random names and countries assigned to each person
+# Printing 10 random names and countries assigned to each person
 
 print("You have 10 friends who also forgot everything about themselves?? Interesting! I guess I will help you again:")
 for i in range (0,10):
     print('Name->', fake.name(), 'SSN->', fake.ssn(), 'Country->', fake.country(), "\n")
 
 
-#Printing out text that is randomized each time it is called. 
+# Printing out text that is randomized each time it is called. 
 print("I can speak gibberish, watch this:")
 print(fake.text() + '\n')
 
-#Printing a profile without specifiying what information you want
+# Printing a profile without specifiying what information you want
 print("You don't have the time to mess around with me? I'm being serious... fine, as fast as I can get it to ya: ")
 print(fake.simple_profile())
