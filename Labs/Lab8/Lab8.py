@@ -12,7 +12,6 @@ try:
 	title = soup.find("h1", attrs={"class": 'heading-5 v-fw-regular'})
 	titleValue = title.string
 
-	
 	costDiv = soup.find("div" , attrs={"class": 'priceView-hero-price priceView-customer-price'})
 	for cost in costDiv.find_all('span', attrs={"aria-hidden": 'true'}):
 		print("Name: %s with a price of %s " % (titleValue, cost.string))
