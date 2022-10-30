@@ -11,11 +11,11 @@ soup = BeautifulSoup(webpage.content, "lxml")
 try: 
 	title = soup.find("h1", attrs={"class": 'heading-5 v-fw-regular'})
 	titleValue = title.string
-	print("Product Title: ", titleValue)
+
 	
 	costDiv = soup.find("div" , attrs={"class": 'priceView-hero-price priceView-customer-price'})
 	for cost in costDiv.find_all('span', attrs={"aria-hidden": 'true'}):
-		print("Product Cost: ", cost.string)
+		print("Name: %s with a price of %s " % (titleValue, cost.string))
 	
 	ratingDiv = soup.find("div", attrs={"class": 'c-ratings-reviews flex c-ratings-reviews-small align-items-center gap-50 ugc-ratings-reviews flex-wrap small-gaps text-center'})
 	for rating in ratingDiv.find_all("p", attrs={"class": 'visually-hidden'}):
