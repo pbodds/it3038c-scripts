@@ -12,3 +12,6 @@ To ensure the script runs properly, make sure to install flask and lyricsgenius.
 `pip install flask`  
 `pip install lyricsgenius`
 
+## Usefulness
+
+This is a project I find useful as I am deeply into music and listen to many different genres. A problem for me is hearing what the lyrics are, especially in a punk song, where it is hard to distinguish some words at times. To help, I wanted to create a script with a cool module I found called lyricsgenius that uses BeautifulSoup to scrape Genius for lyrics. It would be easier to go to Genius, but if this were an .exe then I believe this to be the fastest way to find lyrics in a song. 
