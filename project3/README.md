@@ -4,10 +4,10 @@ Patrick Boddy
 
 ### Welcome to my third and final project! I will be organizing my project in this folder.
 
-This script will host a flask webpage on localhost 5000. The webpage will be a lyric search that will take an artist, song name and token to provide the lyrics to the song. For it to work correctly, the user will need to input a Genius client access token. The link for obtaining the token is found at: https://genius.com/api-clients. 
+This script will host a flask webpage on localhost 5000. The webpage will be a lyric search that will take an artist, song name and token to provide the lyrics to the song. For it to work correctly, the user will need to input a Genius client access token. The link for obtaining the token is found at: https://genius.com/api-clients. To run the script, download the dependencies and run the file with the template folder included in the folder you are running from. Open up a webpage and go to the URL http://localhost:5000/. 
 
 ## Dependencies
-To ensure the script runs properly, make sure to install flask and lyricsgenius.
+To ensure the script runs properly, make sure to install flask and lyricsgenius. 
 
 `pip install flask`  
 `pip install lyricsgenius`
